@@ -36,7 +36,13 @@
     <link rel="stylesheet" href="./assets/css/formacion/academic-cursos.css">
     <link rel="stylesheet" href="./assets/css/formacion/academic-curso-box.css">
     <link rel="stylesheet" href="./assets/css/formacion/academic-curso-list.css">
-
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-box.css">
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-img.css">
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-infoContainer.css">
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-descripcion.css">
+    <link rel="stylesheet" href="./assets/css/experiencia/experiencia-botones.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
 </head>
 <body>
     <!-- Sección del Menú  -->
@@ -205,47 +211,63 @@
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="./assets/img/encritptador.png">
-            <div class="experience__info-container"
+            <div class="experience__info-container">
                 <h2 class="experience__title">Encriptador de texto</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/G3R50N/Encriptador"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://g3r50n.github.io/Encriptador/"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>   
     </section>
         <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
+        <section class="contact__main" id="contact">
+            <div class="contact__main___image">
+                <img src="./assets/img/contact_image.png" alt="imagen contactanos">
             </div>
-        </section>
+            <div class="contact__main___form">
 
+                <div class="contact__form__title">
+                    <h2 class="contact__form__title__h2">Contacto</h2>
+                    <p class="contact__form__title__parf">
+                        ¿Quieres contactarme?<br> Llene el siguiente formulario y me pondre en contacto con usted lo antes posible.
+                    </p>
+                </div>
+                <div class="contact__form">
+                    <span class="paragraph contact__form___label--disable">Nombre</span>
+                    <input type="text" id="nombre__input" class="contact__form___input" required>
+                </div>
+
+                <div class="contact__form">
+                    <label for="email" class="paragraph contact__form___label--disable">E-mail</label>
+                    <input type="mail" id="correo__input" class="contact__form___input" required>
+                </div>
+
+                <div class="contact__form">
+                    <label for="asunto" class="paragraph contact__form___label--disable">Asunto</label>
+                    <input type="text" id="asunto__input" class="contact__form___input" required>
+                </div>
+
+                <div class="contact__form contact__form___msg">
+                    <label for="mensaje" class="paragraph contact__form___label--disable">Mensaje</label>
+                    <input type="text" id="msg__input" class="contact__form___input" required>
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Enviar Mensaje" id="btnForm__Enviar">
+            </div>
+
+        </section>
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
-                <p>Desarrollado por Fulana de Tal</p>
-                <p>2022</p>
+                <p>Desarrollado por: Gerson Farid Ortiz Cortes</p>
+                <p>:&copy; todos los derechos reservados 2023</p>
             </div>
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="./validacion.js"></script>
 </body>
 </html>

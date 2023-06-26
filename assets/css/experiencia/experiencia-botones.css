@@ -1,0 +1,27 @@
+.experiencia__botao--repo{
+    padding: 1rem;
+    border: none;
+    margin-right: 1.5rem;
+    border-radius: 5%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.experience__botao--demo{
+    border: none;
+    border-radius: 5%;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 1rem;
+    background: linear-gradient(to right, #d8bbbb, #656eeb); 
+}
+
+.experience__botao--demo:hover{
+    background:#3743e5;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.experiencia__botao--repo:hover{
+    background:#ccc;
+}
+
+
