@@ -1,0 +1,6 @@
+.skills__line{
+    display: flex;
+    margin: 3rem 0rem;
+    justify-content: space-between;
+
+}

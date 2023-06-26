@@ -1,0 +1,7 @@
+.title__network{
+    display: flex;
+    padding: 0;
+}
+.title__network__item{
+    margin-right: 2rem;
+}

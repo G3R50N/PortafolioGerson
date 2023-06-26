@@ -7,13 +7,19 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
+   --cor-de-fundo: background: #FFEFBA;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #FFFFFF, #eaeae8);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #FFFFFF, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   ;
    --cor-de-link: #000;
+}
+*{
+    box-sizing: border-box;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background:var(--cor-de-fundo);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;

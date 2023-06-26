@@ -1,0 +1,16 @@
+.title__container{
+    width: 80%;
+    padding: 4rem;
+
+}
+
+
+.title__bio{
+    color: #484747;
+    font-size: 2rem;
+}
+.title__subsection{
+    color: #484747;
+    font-weight: 200;
+    text-align: justify;
+}
