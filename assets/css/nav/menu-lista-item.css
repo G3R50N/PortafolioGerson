@@ -1,3 +1,18 @@
 .menu__list__item{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 7rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.menu__list__item a{
+    padding: 1rem;
+}
+
+.menu__list__item:hover{
+    background: linear-gradient(#149CEA, #fff);
+    border-bottom: 1px solid #000;
+    border-radius: 5%;
 }

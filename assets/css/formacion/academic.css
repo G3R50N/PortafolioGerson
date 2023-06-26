@@ -1,0 +1,7 @@
+.academic{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 3rem;
+    background: linear-gradient(to right, #fffde4, #005aa7);
+}

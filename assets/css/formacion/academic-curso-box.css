@@ -1,0 +1,15 @@
+.academic__courses__box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.academic__courses__box ul li img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.academic__courses__box ul li h4{
+    text-transform: uppercase;
+}
