@@ -1,6 +1,7 @@
 .skills__box{
     display: flex;
-    width: 10rem;
+    /* width: 10rem; */
+    margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
     height: 13rem;

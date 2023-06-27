@@ -34,106 +34,114 @@ a{
 }
 
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sección Menu*/
-
-section.menu{
-
-}
-
-/*Sección Title*/
-
-section.title{
-
-}
-
-/*Sección About*/
-
-section.about{
-
-}
-
-/*Sección Hobbies*/
-
-section.hobbies{
-    
-}
-
-/* Experiencia Académica*/
-
-section.academic{
-
-}
-
-/* experiencia*/
-
-section.experience{
-
-}
-
-/*Contacto*/
-
-section.formcontato{
-
-}
-
-/*footeer*/
-
-section.footer{
-   
-}
-
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1024) {
 
 /* Menú */
+.menu{
+    display: flex;
+    flex-direction: column;
+}
 
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
+.title__div{
+    margin: auto;
+}
+.experience__box{
+    flex-direction: column;
+}
+.contact__main___image img{
+    width: 100px;
+    height: 100px;
+}
 
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (min-width: 390px) and (max-width:767px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu nav{
+        width: 90%;
+    }
+    .menu__header{
+        justify-content: center;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-/*Menu*/
 
-/*Titulo*/
+    }
+    .menu__list__item{
+        width: 20rem;
+        border-bottom:1.5px solid blue;
+    }
+    
+    .title__div{
+        display: flex;
+        flex-direction: column;
+    }
+    .title__container{
+        width: 100%;
+    }
+    .title__bio{
+        width: auto;
+        font-size: 0.5rem;
+    }
+    .title__network__item{
+        text-align: center;
+        margin-right: 3.2rem;
+    }
+    .title__profile{
+        margin: auto;
+    }
 
-/*Sección sobre mi*/
+    .skills__line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills__box{
+        margin-top: 1rem;
+        width: 20rem;
+    }
+    .hobbies__line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+    .hobbies__box{
+        margin-top: 1rem;
+        width: 20rem;
+    }
+    .hobbies__box ul{
+        width: 90%;
+        text-align: center;
+    }
+    .academic__courses{
+        display: flex;
+        flex-direction: column;
+    }
+    .academic__courses__box{
+        margin-bottom: 1rem;
+    }
+    .experience__box{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience__img{
+        width: 325px;
+        height: 216px;
+    }
+    .experience__text{
+        text-align: center;
+    }
+    .contact__main___image{
+        display: none;
+    }
 }
